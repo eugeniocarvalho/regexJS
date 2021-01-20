@@ -2,10 +2,11 @@ const testExpression = document.querySelector('#test-expression');
 const res = document.querySelector('#res');
 const expression = prompt('Expressão regular:');
 const re = new RegExp(expression);
+
 testExpression.focus();
+
 testExpression.addEventListener('input', () => {
 
-  // console.log(re)
 
   if (!isNaN(testExpression.value)) {
     if (re.test(Number(testExpression.value))) {

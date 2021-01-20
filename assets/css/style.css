@@ -73,3 +73,22 @@ form button:hover {
   margin-top: 2rem;
   padding: .3rem 1.2rem;
 }
+
+.examples {
+  font-size: 12pt;
+  text-align: start;
+}
+
+.examples p {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-weight: bolder;
+}
+
+.examples code {
+  text-align: start;
+  font-size: 10pt;
+  color: crimson;
+  background-color: #f1f1f1;
+}
