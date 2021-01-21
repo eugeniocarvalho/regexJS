@@ -1,15 +1,14 @@
-const testExpression = document.querySelector('#test-expression');
+const textExpression = document.querySelector('#test-expression');
 const res = document.querySelector('#res');
-const expression = prompt('Expressão regular:');
-const re = new RegExp(expression);
+const re = new RegExp(prompt('Expressão regular:'));
 
-testExpression.focus();
+textExpression.focus();
 
-testExpression.addEventListener('input', () => {
+textExpression.addEventListener('input', () => {
 
 
-  if (!isNaN(testExpression.value)) {
-    if (re.test(Number(testExpression.value))) {
+  if (!isNaN(textExpression.value)) {
+    if (re.test(Number(textExpression.value))) {
       res.setAttribute('style', 'background-color: rgb(91, 245, 130);');
 
       res.innerHTML = 'Palavra aceita';
@@ -19,7 +18,7 @@ testExpression.addEventListener('input', () => {
       res.innerHTML = 'Palavra rejeitada';
     }
   } else {
-    if (re.test(testExpression.value)) {
+    if (re.test(textExpression.value)) {
       res.setAttribute('style', 'background-color: rgb(91, 245, 130);');
 
       res.innerHTML = 'Palavra aceita';
@@ -28,6 +27,5 @@ testExpression.addEventListener('input', () => {
 
       res.innerHTML = 'Palavra rejeitada';
     }
-
   }
 });

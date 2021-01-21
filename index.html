@@ -14,16 +14,16 @@
 
     <form action="">
       
-      <label for="">Palavra para testar:</label>
+      <label for="">Seu texto:</label>
       <input type="text" id="test-expression">
     </form>
 
     <div id="res"></div>
 
     <div class="examples">
-      <h2>Exemplos de entradas:</h2>
+      <h2>Exemplos de expressões regulares</h2>
       <p>Data no formato dd/mm/yyyy:</p>
-      <code>^(0?[1-9]|[12][0-9]|3[10])([ \/\-])(0?[1-9]|1[012])\2([0-9][0-9][0-9][0-9])(([ -])([0-1]?[0-9]|2[0-3]):[0-5]?[0-9]:[0-5]?[0-9])?$</code>
+      <code>^(0?[1-9]|[12][0-9]|3[10])([ \/\-])(0?[1-9]|1[012])\2([0-9][0-9][0-9][0-9])$</code>
 
       <p>24 horas:</p>
       <code>^([01]?[0-9]|2[0-3]):[0-5][0-9]$</code>
@@ -31,17 +31,17 @@
       <p>Inteiro positivo ou negativo:</p>
       <code>^-?\d+$</code>
 
-      <p>Inteiro positivo</p>
+      <p>Inteiro positivo:</p>
       <code>^\d+$</code>
 
-      <p>Float positivo ou negativo</p>
+      <p>Float positivo ou negativo:</p>
       <code>^-?\d*\.?\d+$</code>
 
-      <p>CEP</p>
+      <p>CEP:</p>
       <code>^[0-9]{5}-[0-9]{3}$</code>
 
       <p>E-mail:</p>
-      <code>^(([^<>()[\]\.,;:\d\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$</code>
+      <code>^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$</code>
     </div>
   </section>
 
